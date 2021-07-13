@@ -24,6 +24,12 @@
 #include <string.h>
 #include <sys/ioctl.h>
 
+#ifdef __sun
+#include <sys/filio.h>
+#include <sys/unistd.h>
+#include <sys/stropts.h>
+#endif
+
 #include "absl/strings/str_cat.h"
 
 #include "src/core/ext/filters/client_channel/resolver/dns/c_ares/grpc_ares_ev_driver.h"
