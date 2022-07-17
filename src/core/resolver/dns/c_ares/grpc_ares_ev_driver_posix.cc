@@ -35,6 +35,12 @@
 
 #include <ares.h>
 
+#ifdef __sun
+#include <sys/filio.h>
+#include <unistd.h>
+#include <stropts.h>
+#endif
+
 #include "absl/base/thread_annotations.h"
 #include "absl/log/check.h"
 #include "absl/strings/str_cat.h"

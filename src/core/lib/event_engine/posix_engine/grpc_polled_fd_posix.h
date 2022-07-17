@@ -28,6 +28,9 @@
 // IWYU pragma: no_include <ares_build.h>
 
 #include <sys/ioctl.h>
+#ifdef __sun
+#include <sys/filio.h>
+#endif
 #include <sys/socket.h>
 #include <sys/uio.h>
 #include <unistd.h>
