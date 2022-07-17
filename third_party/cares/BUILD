@@ -7,4 +7,5 @@ exports_files([
     "config_linux/ares_config.h",
     "config_openbsd/ares_config.h",
     "config_windows/ares_config.h",
+    "config_illumos/ares_config.h",
 ])
