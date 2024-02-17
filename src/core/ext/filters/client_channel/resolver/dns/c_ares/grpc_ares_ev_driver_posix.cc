@@ -36,9 +36,9 @@
 #include <ares.h>
 
 #ifdef __sun
+#include <stropts.h>
 #include <sys/filio.h>
 #include <unistd.h>
-#include <stropts.h>
 #endif
 
 #include "absl/base/thread_annotations.h"
